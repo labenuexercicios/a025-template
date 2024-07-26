@@ -13,10 +13,10 @@
   }
   
   main {
-    height: 77vh;
+    min-height: 77vh;
     max-width: 800px;
     display: flex;
-    flex-direction: row;
+    
     margin: 20px auto;
     gap: 10px;
   }
@@ -39,10 +39,21 @@
   }
   
   footer {
-    position: absolute;
-    bottom: 0;
     background-color: black;
     color: white;
     padding: 20px;
     width: 100%;
   }
+
+  @media screen and (min-device-width : 280px) and (max-device-width : 480px) { 
+
+    main {
+      flex-direction: column;
+    }
+    
+
+
+
+    /* celulares */ 
+    
+    } 
